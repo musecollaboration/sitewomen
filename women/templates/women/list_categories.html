@@ -3,7 +3,8 @@
     <li class="selected">{{ cat.name }}</li>
   {% else %}
     <li>
-      <a href="{% url 'category' cat.id %}">{{ cat.name }}</a>
+      <a href="{{ cat.get_absolute_url }}">{{ cat.name }}</a>
     </li>
   {% endif %}
 {% endfor %}
+

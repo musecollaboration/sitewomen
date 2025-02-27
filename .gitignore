@@ -1,3 +1,5 @@
 .venv/
 .vscode/
 .pylintrc
+.env
+db.sqlite3
